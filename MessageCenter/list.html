@@ -1,0 +1,16 @@
+<div style="display:none" ng-style="{display: 'block'}" ng-if="hasAlerts('error')" class="alert alert-danger">
+    <button ng-click="clearAlerts()" type="button" class="close" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+     </button> 
+    <ul ng-repeat="message in alerts | filter: {type: 'error'}">
+         <li ng-bind="message.message"></li>
+     </ul> 
+ </div> 
+<div style="display:none" ng-style="{display: 'block'}" ng-if="hasAlerts('info')" class="alert alert-info">
+    <button ng-click="clearAlerts()" type="button" class="close" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+     </button> 
+     <ul ng-repeat="message in alerts | filter: {type: 'info'}">
+         <li ng-bind="message.message"></li>
+     </ul> 
+</div>
