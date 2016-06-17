@@ -1,4 +1,3 @@
-
 angular.module('ngEnter', [])
     .constant('MODULE_VERSION', '0.0.1')
     .directive('ngEnter', function () {

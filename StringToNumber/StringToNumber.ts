@@ -1,5 +1,4 @@
-/// <reference path="../../../../../web/js/typedefinitions/angular-ui-bootstrap.d.ts" />
-/// <reference path="../../../../../web/js/typedefinitions/angular.d.ts" />
+/// <reference path="../typedefinitions/angular.d.ts" />
 
 module Application.Directives {
     export class StringToNumber implements ng.IDirective {
